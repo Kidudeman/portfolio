@@ -21,7 +21,7 @@ This repository contains code for Portfolio website created using React.
 
 ## Run Locally
 Run this command 
-- ``git clone https://github.com/enikosoft/portfolio.git``
+- ``git clone https://github.com/Kidudeman/portfolio.git``
 - ``npm install``
 - ``npm run dev``
 <p>You are now in the dev environment and you can play around
