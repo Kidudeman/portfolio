@@ -1,26 +1,18 @@
-import {BiLogoPostgresql} from 'react-icons/bi';
-import {FaGoogle, FaNodeJs, FaReact} from 'react-icons/fa';
-import {SiNextdotjs, SiStripe, SiTailwindcss} from 'react-icons/si';
+import {FaNodeJs} from 'react-icons/fa';
+import {SiPython} from 'react-icons/si';
 
 import {
-  SiAmazonaws,
-  SiApollographql,
-  SiGraphql,
+  SiVercel,
   SiJavascript,
-  SiMongodb,
-  SiMysql,
-  SiNestjs,
-  SiPrisma,
+  SiExpress,
   SiTypescript,
+  SiUnrealengine
 } from 'react-icons/si';
 
 import btfLofo from 'assets/images/btf-logo.png';
 import cfLofo from 'assets/images/cfLogo.png';
 import s2eLofo from 'assets/images/s2e-logo.webp';
-import smartFoodLogo from 'assets/images/smart-food.png';
-import viktreLofo from 'assets/images/viktre-logo.jpeg';
-import weatherAppLofo from 'assets/images/weather-app.png';
-import porfolioLogo from '../../../public/logo.svg';
+
 
 export interface Project {
   name: string;
@@ -31,115 +23,44 @@ export interface Project {
   git?: string;
 }
 
-export const comerciaProjects: Project[] = [
+export const customProjects: Project[] = [
   {
-    name: 'Community Funded',
-    description: `Team size: 10+. Platform streamlines fundraising and community management for education and healthcare sectors. Create branded,
-    mobile-optimized pages effortlessly and manage initiatives seamlessly. The platform integrates directly with
-    your brand, website, and existing payment processor. Ideal for inspiring donors and building engaged
-    communities.`,
+    name: 'Unreal Engine Game',
+    description: `Team size: 5. Labyrinth is an interactive game application where you, the player, 
+    awaken in an abandoned maze-like structure and the goal is to find a way out. However, this maze is not a typical maze. 
+    This maze combines vertical and horizontal level design, and you are given a gravity gun to solve the puzzles and progress through all the levels. 
+    The deeper you venture through the maze, the more surreal the journey becomes. The final level is the boss level and after beating the boss, the game ends.`,
     img: cfLofo,
     stack: [
-      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-      <SiApollographql key="apollo" color="#E63CAD" className="text-[28px]" />,
-      <SiGraphql key="graphql" color="#E63CAD" className="text-[28px]" />,
-      <BiLogoPostgresql key="psql" color="#3A6596" className="text-[28px]" />,
+      <SiUnrealengine key="UE 5.4" color="#2F75C0" className="text-[28px]" />,
     ],
+    url: 'https://drive.google.com/file/d/1cMaQHp9XyY3dOFdfivtV2brhTIDqrI9j/view?usp=drive_link'
   },
   {
-    name: 'BTF',
+    name: 'Kahoot Quiz Web App (Backend)',
     description: `Team size: 5. Platform that supports athletes in their development on and off the field by giving them the tools to understand who they are and share
     the context to their performance and their growth as a human being with the people most important to them on their journey.`,
     img: btfLofo,
     stack: [
       <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaReact key="native" color="#5ED4F4" className="text-[28px]" />,
+      <SiJavascript key="js" color="#E9D54B" className="text-[28px]" />,
       <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-      <SiMysql key="mysql" color="#3A6596" className="text-[28px]" />,
-      <SiPrisma key="prizma" color="#3294c9" className="text-[28px]" />,
-      <SiAmazonaws key="serverless" color="#F1941D" className="text-[28px]" />,
+      <SiExpress key="express" color="#86cf35" className="text-[28px]" />,
+      <SiVercel key="vercel" color="#DA224C" className="text-[28px]" />,
     ],
+    url: 'https://github.com/Kidudeman/toohak-back'
   },
   {
-    name: 'Say2eat',
-    description: `Team size: 7. Say2eat helps restaurant chains increase direct
-    online sales, collect valuable consumer insights
-    and data, manage the customer relationship and
-    maximize customer loyalty. By enabling. personalized and fully automated conversations
-    with customers at scale, ordering food from your
-    favorite restaurants has become as frictionless
-    as messaging a friend. Say2eat provides a single
-    and seamless solution for all voice and message
-    applications (e.g Facebook Messenger, iMessage,
-    Amazon Echo, Google Home, etc.).
+    name: 'Peer-to-Peer Torrenting system ',
+    description: `Team size: 1. A permissioned, peer-to-peer file sharing system with a centralised indexing server. The applications are based on both
+    client-server and peer-to-peer models, consisting of one server and multiple clients. All client-server communication is over UDP. All peer-to-peer 
+    communication is over TCP.
     `,
     img: s2eLofo,
     stack: [
-      <SiNextdotjs key="next" className="text-[28px] text-black light:text-black" />,
-      <SiNestjs key="nestjs" color="#DA224C" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-      <SiMongodb key="mongodb" color="#2c913f" className="text-[28px]" />,
+      <SiPython key="python" color="#2F75C0" className="text-[28px]" />,
     ],
+    url: 'https://github.com/Kidudeman/P2P-torrent/tree/main'
   },
-  {
-    name: 'Viktre Solution',
-    description: `Team size: 2. The main goal of the project is to allow a
-        user to make donations on the following social projects. My responsibilities were creating new functionality, creating new site versions (their
-      maintaining), bugs fixing, working with the Facebook application, add new requests to DB and fixing on the server side.`,
-    img: viktreLofo,
-    stack: [
-      <SiJavascript key="js" color="#E9D54B" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaNodeJs key="node" color="#86cf35" className="text-[28px]" />,
-      <SiMongodb key="mongodb" color="#2c913f" className="text-[28px]" />,
-    ],
-  },
-];
 
-export const customProjects: Project[] = [
-  {
-    name: 'Weather React App',
-    url: 'https://weather.enikosoft.com/',
-    description: `React/Typescript/StyledComponent/zustand. You can find weather and current location time for any cities, searched by Google Place Api. Adaptive and responsive design. Weather data from https://www.visualcrossing.com`,
-    img: weatherAppLofo,
-    stack: [
-      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <FaGoogle key="google" color="#000" className="text-[28px]" />,
-    ],
-    git: 'https://github.com/enikosoft/weather-widget',
-  },
-  {
-    name: 'Online shop "Smart Food"',
-    url: 'https://smart-food.enikosoft.com/',
-    description: `E-commerce project on Next.js, React, Tailwind, Stripe. Online shop for selling food. Adaptive and responsive design. Full checkout proccess. Using clerk auth. More information in github.`,
-    img: smartFoodLogo,
-    stack: [
-      <SiNextdotjs key="next" className="text-[28px] text-white light:text-black" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
-      <SiStripe key="stripe" color="#6058f8" className="text-[28px]" />,
-      <BiLogoPostgresql key="postgresql" color="#3A6596" className="text-[28px]" />,
-    ],
-    git: 'https://github.com/enikosoft/next-ecommerce-smart-food',
-  },
-  {
-    name: 'My Portfolio',
-    url: '',
-    description: `Welcome to my portfolio! Explore my diverse range of projects,
-      showcasing my expertise in building responsive and dynamic web applications.
-      Dive into my code, discover my skills,
-      and get in touch to discuss exciting opportunities. Let's bring ideas to life through technology!`,
-    img: porfolioLogo,
-    stack: [
-      <SiTypescript key="ts" color="#2F75C0" className="text-[28px]" />,
-      <FaReact key="react" color="#5ED4F4" className="text-[28px]" />,
-      <SiTailwindcss key="tailwind" color="#3FBDCC" className="text-[28px]" />,
-    ],
-    git: 'https://github.com/enikosoft/portfolio',
-  },
 ];

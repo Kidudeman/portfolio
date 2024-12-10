@@ -1,19 +1,19 @@
 import {useState} from 'react';
 import ProjectCard from './ProjectCard';
-import {comerciaProjects, customProjects} from './utils';
+import {customProjects} from './utils';
 
-import {DonwloadCVButton} from 'components/DownloadCVButton';
+// import {DonwloadCVButton} from 'components/DownloadCVButton';
 
 export const Projects = () => {
   const data = [
     {
-      label: 'Comercial',
-      value: 'comercial',
-    },
-    {
       label: 'Personal',
       value: 'personal',
     },
+    // {
+    //   label: 'Commercial',
+    //   value: 'commercial',
+    // },
   ];
   const [activeTab, setActiveTab] = useState(data[0].value);
 
@@ -29,14 +29,8 @@ export const Projects = () => {
         </div>
       </div>
       <div className="mb-8">
-        <button
-          title="Comercial projects"
-          onClick={() => setActiveTab('comercial')}
-          className={activeTab === 'comercial' ? `btn-active` : 'btn'}
-        >
-          Comercial
-        </button>
-        <button
+
+        <button 
           title="Personal projects"
           onClick={() => setActiveTab('personal')}
           className={activeTab === 'personal' ? `btn-active` : 'btn'}
@@ -45,24 +39,16 @@ export const Projects = () => {
         </button>
       </div>
       <>
-        {activeTab === 'comercial' ? (
-          <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {comerciaProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-        ) : (
-          <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {customProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
-            ))}
-          </div>
-        )}
+        <div className="xxl:grid-cols-3 grid grid-cols-1 gap-6 md:grid-cols-2">
+        {customProjects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+        ))}
+        </div>  
       </>
-      <div className="mt-12 w-full">
+      {/* <div className="mt-12 w-full">
         <i className="fond-light pr-4 text-lg text-primaryColor">More information</i>
         <DonwloadCVButton isSmall />
-      </div>
+      </div> */}
     </>
   );
 };

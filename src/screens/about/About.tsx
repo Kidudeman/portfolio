@@ -21,26 +21,28 @@ export const About = () => {
         <br />
         <span className="html-tag pl-8">{'<p>'}</span>
         <p className="pb-4 pl-10 text-lg">
-          My name is <span className="text-lg text-themePrimaryColor">Evgen Nikolenko</span> and I am an experienced{' '}
-          <span className="text-lg text-themePrimaryColor">Full-Stack JavaScript Developer </span>
-          with over 6 years of expertise in building web applications using{' '}
-          <span className="text-lg text-themePrimaryColor">React and Node.js</span> technologies.
+          My name is <span className="text-lg text-themePrimaryColor">Andrew Gong</span> and I am an {' '}
+          <span className="text-lg text-themePrimaryColor">UNSW Student </span>
+          with over 2 years of expertise in programming{' '}
+          <span className="text-lg text-themePrimaryColor">C, C++, Javascript, Java, Python, HTML, CSS.</span>
         </p>
         <p className="pb-4 pl-10 text-lg">
-          Throughout my career, I`ve had the privilege of working on impactful projects with different technologies. My
-          contributions to these projects have been marked by{' '}
+          I am currently completing{' '}
           <span className="text-lg text-themePrimaryColor">
-            a strong focus on creating efficient and user-friendly solutions
+            Computer Science/Fine Arts (Animation and Moving Image)
           </span>
-          .{' '}
+          {' '}
+          at UNSW.
         </p>
         <p className="pb-4 pl-10 text-lg">
-          I`ve consistently delivered{' '}
+          I have experience in {' '}
           <span className="text-lg text-themePrimaryColor">
-            high-quality code, optimized application performance, and improved the overall user experience.
+            Backend and Frontend web development 
           </span>{' '}
-          I am passionate about using technology to solve complex problems and am a strong advocate for Agile
-          methodologies and best coding practices.
+          and extensive knowledge in {' '}
+          <span className="text-lg text-themePrimaryColor">
+            algorithms and data structures.
+          </span>{' '}
         </p>
         <span className="html-tag pl-8">{'</p>'}</span>
         <br />

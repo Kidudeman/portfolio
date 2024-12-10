@@ -5,7 +5,7 @@ import {mediaBreakpoints} from 'responsive';
 export const DonwloadCVButton = ({isSmall}: {isSmall?: boolean}) => {
   const [, handleDownload] = useDownloadPdf(import.meta.env.VITE_CV_PATH, 'Evgen-Nikolenko-FullStack-CV.pdf');
 
-  const mobile = useMediaQuery({
+  const mobile = useMediaQuery({  
     query: `(max-width: ${mediaBreakpoints.sm}px)`,
   });
 
