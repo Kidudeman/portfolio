@@ -1,9 +1,12 @@
 {
-  "name": "eniko-portfolio",
+  "homepage": "https://kidudeman.github.io/portfolio/",
+  "name": "andrew-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
     "format": "npm run prettier -- --write",
     "dev": "vite",
